@@ -25,3 +25,6 @@ This is my Orders web page from Part 2,  Spring Data JDBC. The table is an HTML/
 
 This is my Orders web page for Part 3, Native Query + JDBC Override. The table is an HTML/Thymeleaf view that shows the 3 rows returned by my native SQL query, which I wired through a Spring Data JDBC repository with a JDBC override/mapper to shape the result. The Total rows: 3 at the top confirms the custom query ran correctly end-to-end: repository to controller to template to browser. The columns display ID, Order No A0001 style, Product, Price with two decimals, and Qty, proving the formatting and mapping are working. 
 ---
+## - Conclusion
+In this activity, I stood up and cleaned three Spring Boot projects (4-1, 4-2, 4-3) using the standard Maven layout and a consistent main class. In 4-1, I verified the basic MVC flow with an in-memory data service returning orders to a Thymeleaf table. In 4-2 I switched to Spring Data JDBC, added an OrderEntity and OrdersRepository, wired the datasource in application.properties, and confirmed the UI pulled real rows end-to-end. In 4-3 I used schema.sql/data.sql and a native query to return a smaller, custom result set, then mapped and displayed it correctly in the same view.
+---
